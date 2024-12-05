@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures content covers the full height of the viewport */
+    min-height: 100vh; 
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -127,7 +127,6 @@ table tr:hover {
     background-color: #ddd;
 }
 
-/* Formularz kontaktowy */
 .contact-form label, .comment-form label {
     display: block;
     margin: 10px 0 5px;
@@ -200,7 +199,6 @@ article p {
     text-decoration: underline;
 }
 
-/* Ensure the article content is aligned horizontally */
 .movie, .content-wrap {
     display: flex;
     flex-wrap: wrap;
