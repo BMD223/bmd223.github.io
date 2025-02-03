@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<%- include('../partials/header') %>
+<body>
+    <%- include('../partials/nav') %>
+    
+    <main class="content">
+        <h2>Witaj na Forum o filmach A24!</h2>
+        <ul class="topics">
+            <% threads.forEach(thread => { %>
+                <li>
+                    <a href="/threads/<%= thread.id %>">
+                        <%= thread.title %>
+                    </a>
+                </li>
+            <% }); %>
+        </ul>
+    </main>
+
+    <%- include('../partials/footer') %>
+</body>
+</html>

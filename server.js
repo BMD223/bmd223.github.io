@@ -6,12 +6,10 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-// Database connection
 const db = require('./models/database');
 
-// Routes
 const mainRoutes = require('./routes/index');
-app.use('/', mainRoutes);
+app.use('/', mainRoutes);   
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
